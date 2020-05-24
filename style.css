@@ -1,13 +1,33 @@
 body {
     font-family: 'Open Sans', 'Times New Roman';
 }
+.container {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+@media (max-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+}
 .menu{
     margin: 0;
     padding: 10px;
     list-style-type: none;
     text-align: center;
     background-color: #E3BC62;
-    height: 27px;
+    
 }
 .menu a{ 
     transition: border-radius 1s, background-color 1s;
@@ -29,7 +49,6 @@ body {
 .name{
     text-align: center;
     padding-top: 60px;
-    border: 2px solid gray;
     height: 250px;
     background: linear-gradient(orange, green);
     color: white;
